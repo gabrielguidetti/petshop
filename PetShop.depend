@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1663461948 source:d:\ws-codeblocks\petshop\funcoes.c
+	<stdio.h>
+	"header.h"
+
+1663461910 d:\ws-codeblocks\petshop\header.h
+
+1663461830 source:d:\ws-codeblocks\petshop\main.c
+	<stdio.h>
+	<stdlib.h>
+	"header.h"
+	<locale.h>
+
+1663463058 source:c:\temp\ws-codeblock\petshop\main.c
+	<stdio.h>
+	<stdlib.h>
+	"header.h"
+	<locale.h>
+
+1663462514 c:\temp\ws-codeblock\petshop\header.h
+
