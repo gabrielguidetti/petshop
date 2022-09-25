@@ -9,9 +9,14 @@ int main()
     printf("Seja bem vindo!\n\n");
 
     // VARIAVEIS (DECLARAR EMBAIXO DA ÚLTIMA JÁ CRIADA)
+    int x = 0;
     int escolha = 9;
     int qtdProdutos = 0;
+    int qtdPets = 0;
     struct Produto produtos[20];
+    struct Pet pets[20];
+    int vendas[20][2]; // primeira coluna é o id do produto vendido, e a segunda coluna é a quantidade vendida
+    int qtdVendas = 0;
 
     // MENU
     system("cls");
@@ -22,7 +27,8 @@ int main()
         printf("2: Listar produto.\n");
         printf("3: Cadastrar pet.\n");
         printf("4: Registrar venda.\n");
-        printf("5: Agendar banho e tosa.\n");
+        printf("5: Listar vendas.\n");
+        printf("6: Agendar banho e tosa.\n");
         printf("0: Sair.\n");
         scanf("%d%*c", &escolha);
 
@@ -35,21 +41,31 @@ int main()
             case 2:
                 system("cls");
                 listarProdutos(produtos, qtdProdutos);
+                printf("Digite 0 para voltar ao menu: ");
+                scanf("%d%*c", &x);
                 break;
 
             case 3:
                 system("cls");
-                printf("Cadastrar pet");
+                cadastrarPet(&pets, &qtdPets);
                 break;
 
             case 4:
                 system("cls");
-                printf("Registrar venda");
+                registrarVenda(&vendas, &qtdVendas, produtos, qtdProdutos);
+                int temp = qtdVendas-1;
                 break;
 
             case 5:
                 system("cls");
-                printf("Agendar banho e tosa");
+                listarVendas(vendas,produtos,qtdVendas);
+                printf("Digite 0 para voltar ao menu: ");
+                scanf("%d%*c", &x);
+                break;
+
+            case 6:
+                system("cls");
+                agendarBanho();
                 break;
 
             case 0:

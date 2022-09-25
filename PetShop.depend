@@ -11,11 +11,15 @@
 	"header.h"
 	<locale.h>
 
-1663463058 source:c:\temp\ws-codeblock\petshop\main.c
+1664141631 source:c:\temp\ws-codeblock\petshop\main.c
 	<stdio.h>
 	<stdlib.h>
 	"header.h"
 	<locale.h>
 
-1663462514 c:\temp\ws-codeblock\petshop\header.h
+1664141630 c:\temp\ws-codeblock\petshop\header.h
+
+1664141764 source:c:\temp\ws-codeblock\petshop\funcoes.c
+	<stdio.h>
+	"header.h"
 
